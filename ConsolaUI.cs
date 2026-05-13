@@ -41,6 +41,23 @@
             return Console.ReadLine()?.ToLower() == "s";
         }
 
+        public static string PedirCategoria()
+        {
+            Console.WriteLine("Elige una categoría:");
+            Console.WriteLine("  1. Arquitectura");
+            Console.WriteLine("  2. POO");
+            Console.WriteLine("  3. .NET");
+            Console.Write("Opción: ");
+
+            return Console.ReadLine() switch
+            {
+                "1" => "Arquitectura",
+                "2" => "POO",
+                "3" => ".NET",
+                _ => "Arquitectura"  // default si ingresa algo inválido
+            };
+        }
+
         private void MostrarAhorcado()
         {
             string [] etapas = new string[] 
