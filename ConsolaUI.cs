@@ -30,9 +30,7 @@
             return Console.ReadLine() [0];
         }
 
-        public
-        void
-        MostrarMensaje
+        public void MostrarMensaje
         ( string mensaje) => Console.WriteLine(mensaje);
 
         public bool PreguntarOtraVez()
