@@ -11,6 +11,10 @@
 
         private readonly string _categoria;
 
+        public PalabrasEnMemoria()
+        {
+        }
+
         public PalabrasEnMemoria(string categoria)
         {
             _categoria = categoria;
